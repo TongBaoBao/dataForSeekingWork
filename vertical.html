@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>垂直居中</title>
+		<style>
+			.vertical-container{
+				height:300px;
+				position:relative;
+				border:1px solid yellow;
+			}
+			.child-box{
+				position:absolute;
+				left:50%;
+				top:50%;
+				transform:translate(-50%,-50%);
+				border:1px solid red;
+			}
+			.vertical-container2{
+				height:300px;
+				position:relative;
+				border:1px solid yellow;
+			}
+			.child-box2{
+				position:absolute;
+				left:50%;
+				top:50%;
+				width:200px;
+				height:30px;
+				margin-top:-15px;
+				margin-left:-100px;
+				border:1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="vertical-container">
+			<div class="child-box">垂直居中,未知child宽高</div>
+		</div>
+		<div class="vertical-container2">
+			<div class="child-box2">垂直居中,已知child宽高</div>
+		</div>
+	</body>
+</html>
