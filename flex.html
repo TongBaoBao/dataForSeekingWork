@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>flex</title>
+		<style>
+			.container{
+				display:flex;
+				display:-webkit-flex;
+			}
+			.flex1{
+				-webkit-flex:none;
+				flex:none;
+				width:200px;
+				border:1px solid red;
+			}
+			.flex2{
+				-webkit-flex:1;
+				flex:1;
+				border:1px solid yellow;
+			}
+			.vertical-container{
+				height:300px;
+				display:-webkit-flex;
+				display:flex;
+				-webkit-align-items:center;
+				align-itmes:center;
+				-webkit-justify-content:center;
+				justify-content:center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="flex1">定宽200px</div>
+			<div class="flex2">自适应宽度</div>
+		</div>
+		<div class="vertical-container">
+			<div>flex垂直居中</div>
+		</div>
+	</body>
+</html>
