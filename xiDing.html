@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>吸顶</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#header{
+			width: 100%;
+			height: 400px;
+			background-color: blue;
+		}
+		#nav{
+			width: 100%;
+			height: 40px;
+			background-color: gray;
+		}
+		#content{
+			width: 100%;
+			height: 1500px;
+			background-color: yellow;
+		}
+	</style>
+	<script>
+		window.onload = function () {
+			var nav = document.getElementById('nav');
+			var content = document.getElementById('content');
+			var top = nav.offsetTop;
+			console.log(top)
+			window.onscroll = function () {
+				var wScroll = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+				console.log(wScroll)
+				if (wScroll>top) {
+					nav.style.position = 'fixed';
+					nav.style.top = '0';
+					content.style.marginTop = '40px';
+				}else{
+					nav.style.position = '';
+					content.style.marginTop = '0';
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+	</div>
+	<div id="nav">
+	</div>
+	<div id="content">
+	啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+    啦啦啦<br>
+	</div>
+</body>
+</html>
