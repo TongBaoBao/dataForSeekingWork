@@ -1,0 +1,25 @@
+大致代码如下
+
+首先新建script标签
+var script = document.creatElement("script");
+var head = documnet.getElementsByTagName("head")[0];
+
+设置类型
+script.type = "text/javascript";
+script.src = "...";
+
+//绑定事件 资源加载成功
+script.onreadystatechange = function () {
+  if(/^(loaded|complete)$/.test(script.readyState)) {
+    script.onreadystatechange = null;
+    ...
+  }
+}；
+
+//绑定事件 资源加载失败
+script.onerror =function () {
+...
+};
+
+//插入script标签
+head.insertBefore(script,head.firstChild);
