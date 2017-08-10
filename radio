@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test4</title>
+</head>
+<body>
+	<div>
+		<label><input class="done" type="radio" value="0" checked><span>√</span>A</label>
+		<label><input class="done" type="radio" value="1"><span>√</span>B</label>
+	</div>
+</body>
+<script>
+	var a = document.getElementsByClassName('done')[0].checked
+	console.log(a)
+</script>
+<style>
+	input[type="radio"]{
+		opacity: 0;
+	}
+	span{
+		color: white;
+		border: 1px solid black;
+	}
+	.done:checked + span{
+		background-color: black;
+	}
+</style>
+</html>
