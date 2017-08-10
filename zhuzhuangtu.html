@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<body>
+	<p>实现柱状图</p>
+	<p>方法一，绝对定位</p>
+	<div style="height:200px;width:200px;position:relative;border-left:1px solid #000;">
+		<div style="height:30%;width:10px;position:absolute;top:70%;background-color:#f00;left:10px"></div>
+		<div style="height:80%;width:10px;position:absolute;top:20%;background-color:#ddd;left:30px"></div>
+		<div style="height:70%;width:10px;position:absolute;top:30%;background-color:#0fd;left:50px"></div>
+		<div style="height:60%;width:10px;position:absolute;top:40%;background-color:#ff0;left:70px"></div>
+		<div style="height:90%;width:10px;position:absolute;top:10%;background-color:#234;left:100px"></div>
+	</div>
+	<br>
+	<p>实现柱状图</p>
+	<p>方法二，flex</p>
+	<div id="context">
+		<div class="flex-box"></div>
+		<div class="flex-box"></div>
+		<div class="flex-box"></div>
+		<div class="flex-box"></div>
+		<div class="flex-box"></div>
+	</div>
+</body>
+<style>
+	#context {
+		width: 500px;
+		height: 300px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-end;
+	}
+	.flex-box {
+		width: 15%;
+	}
+	.flex-box:nth-child(1) {
+		height: 30%;
+		background-color: #f00;
+	}
+	.flex-box:nth-child(2) {
+		height: 80%;
+		background-color: #ddd;
+	}
+	.flex-box:nth-child(3) {
+		height: 70%;
+		background-color: #0fd;
+	}
+	.flex-box:nth-child(4) {
+		height: 60%;
+		background-color: #ff0;
+	}
+	.flex-box:nth-child(5) {
+		height: 90%;
+		background-color: #234;
+	}
+</style>
+</html>
